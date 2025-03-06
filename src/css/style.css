@@ -130,7 +130,7 @@ header nav {
 }
 
 #image-picker {
-    margin-bottom: 500px;
+    margin-bottom: 250px;
 }
 
 #image-picker ul {
@@ -185,3 +185,53 @@ header nav {
     outline: 2px solid #43a1ff;
 }
 
+/* mobile */
+
+@media (max-width: 1024px) {
+    #main-content {
+        padding: 2rem;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 480px) {
+    #navbar li {
+        display: none;
+    }
+
+    #navbar #logo {
+        display: flex;
+    }
+
+    #bottom-header-links a {
+        display: none;
+    }
+
+    #bottom-header-links .btn {
+        display: flex;
+    }
+
+    #main-content {
+        padding: 2rem;
+        overflow: hidden;
+    }
+
+    #main-content #subtitle {
+        font-size: 3rem;
+    }
+
+    #main-content #product-image {
+        max-width: 500px;
+        margin: 3rem auto;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    #main-content #subtitle {
+        font-size: 2rem;
+    }
+
+}
